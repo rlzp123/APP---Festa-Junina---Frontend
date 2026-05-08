@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barraca da Adivinhação Pro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="app-container">
+        <div class="flags-rope">
+            <div class="flag red"></div>
+            <div class="flag yellow"></div>
+            <div class="flag blue"></div>
+            <div class="flag green"></div>
+            <div class="flag red"></div>
+            <div class="flag yellow"></div>
+            <div class="flag blue"></div>
+        </div>
+
+        <header>
+            <h1 class="main-title">FESTA JUNINA</h1>
+            <h2 class="subtitle">BARRACA DA ADIVINHAÇÃO</h2>
+        </header>
+
+        <main>
+            <div class="visual-container">
+                <div class="stars-bg"></div>
+                <div class="crystal-ball-wrapper">
+                    <div class="crystal-ball">
+                        <div class="inner-glow"></div>
+                        <div class="swirl"></div>
+                    </div>
+                    <div class="base"></div>
+                </div>
+            </div>
+
+            <section id="choice-area" class="fade-in">
+                <p class="prompt-text">O que você deseja saber, sô?</p>
+                <button class="btn-junino coral" onclick="consultar('Vou arranjar um amor?', 'amor')">
+                    Vou arranjar uma namorada(o)?
+                </button>
+                <button class="btn-junino coral" onclick="consultar('Vou ganhar na pescaria?', 'sorte')">
+                    Vou ganhar na pescaria?
+                </button>
+            </section>
+
+            <section id="result-area" class="hidden">
+                <div class="result-card">
+                    <p id="prediction-text"></p>
+                </div>
+                <button class="btn-junino orange" onclick="resetar()">TENTAR NOVAMENTE</button>
+            </section>
+        </main>
+
+        <div class="fire-container">
+            <div class="fire">
+                <div class="flame"></div>
+                <div class="flame"></div>
+                <div class="flame"></div>
+                <div class="log"></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
